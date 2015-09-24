@@ -1,54 +1,338 @@
+/* FONTS AND HTML BODY */
+
 html, body{
-   overflow-x: hidden;
- }
+    overflow-x: hidden;
+}
 
- body {
-   font-family: "Muli", Helvetica, sans-serif;
-   color:#333333;
- }
+body {
+    color:#333333;
+    font-family: "Muli", Helvetica, sans-serif;
+   
+}
 
- h1, h2, h3, h4, h5, h6 {
-   font-family: "Ovo", Times, serif;
- }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ovo", Times, serif;
+}
 
- h2 {
-   font-size:28px;
-   font-weight: normal;
-   margin-bottom: 5px;
- }
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
 
- p {
-   font-size:16px;
-   line-height: 19px;
-   font-weight: 100;
- }
+p {
+    font-size:16px;
+    font-weight: 100;
+    line-height: 19px;
+}
 
  /* GRID */
- .container {
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   position: relative;
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.one-half, .one-third, .one-fourth {
+    float:left;
+    margin:0 2% 20px;
+    min-height: 1px;
+    position:relative;
+    width:96%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+}
+
+@media (min-width: 1200px) {
+    .container {
+     width: 1170px;
+   }
+}
+
+@media (min-width: 1920px) {
+	.container {
+		width: 1900px;
+	}
  }
 
- .container:before,
- .container:after {
-   content: " ";
-   display: table;
+ /* Header Nav*/
+
+ header .site-logo {
+    display: 75%;
+    float: left;
  }
 
- .container:after {
-   clear: both;
+ header nav {
+    background-color: #639EE4;
+    padding: .25em 0;
+    height: 100px;
+    width: 100%;
  }
 
- .one-half, .one-third, .one-fourth {
-   width:96%;
-   float:left;
-   position:relative;
-   min-height: 1px;
-   margin:0 2% 20px;
+ /*WHY WHY IS THERE A F9 Gap on BOTH SIDES?*/
+
+ header nav ul {
+    display: inline;
+    float: right;
+    margin: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+
+header nav ul > li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px;
+}
+
+header nav ul > li.btn-outline {
+    padding:10px 15px;
+    border:2px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+header nav ul > li.btn-outline:hover {
+    background: #FFFFFF;
+}
+
+header nav ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header nav ul > li.btn-outline:hover > a {
+    color: #639EE4;
+}
+
+header {
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+/* Header with Hero*/
+
+header .hero {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+header .hero h1 {
+    font-size:48px;
+    font-weight: normal;
+    margin:95px 0 0;
+    color: #639EE4;
+}
+
+header .hero p {
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 40px;
+    margin:10px 0 40px;
+}
+
+header .hero img {
+    display: block;
+    margin:3em auto 0;
+}
+
+/*WHY BLANK SPACE UNDER THIS SECTION?*/
+
+/* buttons */
+
+.btn {
+    background: #639EE4;
+    border: 1px solid #639EE4;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: "Muli", sans-serif;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/* Features*/
+
+.features {
+    background-color: #EAEAEA;
+    display: block;
+    position: relative;
+    text-align: center;
  }
 
+.features ul {
+    margin: 0 auto;
+    padding: 4em 0;
+ }
 
- 
+.features ul li {
+    display: inline-block;
+    list-style-type: none;
+ }
+
+.features i {
+    color:#639EE4;
+    font-size:60px;
+    margin:0;
+    vertical-align: middle;
+ }
+
+ .features h2 {
+    color:#333333;
+ }
+
+ .features h2 span {
+    color: #639EE4;
+ }
+
+ .features p {
+    font-size: 28px;
+    line-height: 36px;
+ }
+
+/*WHY THE WHITE SPACE?*/
+
+ /* Pricing Plans*/
+
+ .pricing {
+    background-color: #EAEAEA;
+ }
+
+ .pricing h2 {
+    text-align: center;
+ }
+
+ .pricing .container p {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+ }
+
+.box {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    list-style-type: none;
+    min-height: 400px;
+    position: relative;
+}
+
+.box h3 {
+    background-color: #639EE4;
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+li.one-third {
+    list-style-type: none;
+}
+
+.box h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.container li {
+    color: #333333;
+    font-size: 20px;
+    line-height: 40px;
+    list-style-type: none;
+}
+
+.container span {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 12px;
+    color: #333333;
+    line-height: 15px;
+}
+
+.pricing .btn {
+    background: #639EE4;
+    border: 1px solid #639EE4;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: "Muli", sans-serif;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*OMG WHY WON'T THIS BUTTON CENTER????*/
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #639EE4;
+    color: #FFFFFF;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: center;
+}
+
+footer nav .footer-links a {
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    margin: 10px auto 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+footer p, footer nav ul  {
+    font-size: 14px;
+    margin: 10px auto 0;
+}
+
+footer .copyright-block {
+    float: right;
+    text-align: right;
+    vertical-align: center;
+}
+/*WHY DOES THIS LOOK WEIRD? I WANT A NICE INLINE OF NAV TEXT, WITH C ON RIGHT SIDE*/
