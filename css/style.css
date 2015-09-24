@@ -1,4 +1,8 @@
 /* FONTS AND HTML BODY */
+html {
+    background-color: #EAEAEA;
+}
+
 
 html, body{
     overflow-x: hidden;
@@ -88,23 +92,26 @@ p {
 	}
  }
 
- /* Header Nav*/
 
- header .site-logo {
-    display: 75%;
-    float: left;
- }
 
- header nav {
+/*header*/
+
+header {
     background-color: #639EE4;
-    padding: .25em 0;
-    height: 100px;
-    width: 100%;
- }
+    color: #FFFFFF;
+    max-height: 100px;
+    padding: .05em 0;
+    position: relative;
+    left:0;
+    right: 0;
+    top: 0;
+}
 
- /*WHY WHY IS THERE A F9 Gap on BOTH SIDES?*/
+header img {
+    max-height: 75px;
+}
 
- header nav ul {
+ header .buttons {
     display: inline;
     float: right;
     margin: 0;
@@ -137,39 +144,35 @@ header nav ul > li.btn-outline:hover > a {
     color: #639EE4;
 }
 
-header {
-    background-color: #f9f9f9;
-    width: 100%;
-}
 
-/* Header with Hero*/
+/* Hero*/
 
-header .hero {
+.hero {
+    background-color: #F9F9F9;
     display: block;
+    padding-top: 20px;
     position: relative;
     text-align: center;
 }
 
-header .hero h1 {
+.hero h1 {
     font-size:48px;
     font-weight: normal;
     margin:95px 0 0;
     color: #639EE4;
 }
 
-header .hero p {
+.hero p {
     font-size: 26px;
     font-weight: 100;
     line-height: 40px;
     margin:10px 0 40px;
 }
 
-header .hero img {
+.hero img {
     display: block;
     margin:3em auto 0;
 }
-
-/*WHY BLANK SPACE UNDER THIS SECTION?*/
 
 /* buttons */
 
@@ -194,7 +197,7 @@ header .hero img {
 
 .features ul {
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 1em 0;
  }
 
 .features ul li {
@@ -211,6 +214,8 @@ header .hero img {
 
  .features h2 {
     color:#333333;
+    padding-top: 1em;
+    padding-bottom: 2em;
  }
 
  .features h2 span {
@@ -222,7 +227,6 @@ header .hero img {
     line-height: 36px;
  }
 
-/*WHY THE WHITE SPACE?*/
 
  /* Pricing Plans*/
 
@@ -234,18 +238,27 @@ header .hero img {
     text-align: center;
  }
 
+ .pricing .container {
+    background-color: #F9F9F9;
+ }
+
  .pricing .container p {
     font-size: 18px;
     line-height: 20px;
     text-align: center;
  }
 
+/*.box-frame {
+    background-color: #FFFFFF;
+}*/
+
 .box {
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
     border-radius: 4px;
     list-style-type: none;
     min-height: 400px;
     position: relative;
+    text-align: center;
 }
 
 .box h3 {
@@ -253,8 +266,17 @@ header .hero img {
     color: #FFFFFF;
     font-size: 26px;
     padding: 1em;
-    text-align: center;
     text-decoration: none;
+}
+
+.box .plan {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-size: 20px;
+    line-height: 40px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0.5em 1em 1em 1em;
 }
 
 li.one-third {
@@ -266,34 +288,39 @@ li.one-third {
     text-align: center;
 }
 
-.container li {
+/*.container li {
     color: #333333;
     font-size: 20px;
     line-height: 40px;
     list-style-type: none;
-}
+}*/
 
 .container span {
     text-decoration: underline;
 }
 
-.small {
-    font-size: 12px;
-    color: #333333;
-    line-height: 15px;
+.sign-up-now {
+    display: block;
+    margin: 0 auto;
 }
 
-.pricing .btn {
+/.sign-up-now .btn {
+    text-align: center;
     background: #639EE4;
     border: 1px solid #639EE4;
     border-radius: 4px;
     color: #FFFFFF;
     font-family: "Muli", sans-serif;
-    padding: 10px 30px;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 150px;
     text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.sign-up-now .small {
+    color: #333333;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
 }
 
 /*OMG WHY WON'T THIS BUTTON CENTER????*/
@@ -330,9 +357,43 @@ footer p, footer nav ul  {
     margin: 10px auto 0;
 }
 
-footer .copyright-block {
+footer .copyright-block li {
     float: right;
     text-align: right;
     vertical-align: center;
 }
 /*WHY DOES THIS LOOK WEIRD? I WANT A NICE INLINE OF NAV TEXT, WITH C ON RIGHT SIDE*/
+
+/* DASHBOARD */
+
+.h-dashboard nav {
+    background-color: #639EE4;
+    color: #FFFFFF;
+    height: 75px;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+}
+
+.settings li {
+    list-style-type: none;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.settings img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.h-dashboard .settings {
+    display: inline-block;
+    float: right;
+}
+
+
+
+
