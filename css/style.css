@@ -93,14 +93,14 @@ p {
  }
 
 
-
-/*header*/
+/*HEADER*/
 
 header {
     background-color: #639EE4;
     color: #FFFFFF;
+    min-height: 50px;
     max-height: 100px;
-    padding: .05em 0;
+    padding: .25em 0;
     position: relative;
     left:0;
     right: 0;
@@ -109,14 +109,19 @@ header {
 
 header img {
     max-height: 75px;
+    position: relative;
+    top: 25px;
 }
 
  header .buttons {
-    display: inline;
+    display: inline-block;
     float: right;
-    margin: 0;
+    margin: 20;
     text-align: right;
     vertical-align: middle;
+    position: relative;
+    left:50px;
+    bottom: 50px;
 }
 
 header nav ul > li {
@@ -126,9 +131,9 @@ header nav ul > li {
 }
 
 header nav ul > li.btn-outline {
-    padding:10px 15px;
     border:2px solid #FFFFFF;
     border-radius: 4px;
+    padding:10px 15px;
 }
 
 header nav ul > li.btn-outline:hover {
@@ -145,7 +150,7 @@ header nav ul > li.btn-outline:hover > a {
 }
 
 
-/* Hero*/
+/*HERO*/
 
 .hero {
     background-color: #F9F9F9;
@@ -174,7 +179,7 @@ header nav ul > li.btn-outline:hover > a {
     margin:3em auto 0;
 }
 
-/* buttons */
+/* FREE TRIAL BUTTON */
 
 .btn {
     background: #639EE4;
@@ -186,7 +191,7 @@ header nav ul > li.btn-outline:hover > a {
     text-decoration: none;
 }
 
-/* Features*/
+/* FEATURES */
 
 .features {
     background-color: #EAEAEA;
@@ -228,7 +233,7 @@ header nav ul > li.btn-outline:hover > a {
  }
 
 
- /* Pricing Plans*/
+ /* PRICING AND PLANS */
 
  .pricing {
     background-color: #EAEAEA;
@@ -299,12 +304,8 @@ li.one-third {
     text-decoration: underline;
 }
 
-.sign-up-now {
-    display: block;
-    margin: 0 auto;
-}
 
-/.sign-up-now .btn {
+/*/.sign-up-now .btn {
     text-align: center;
     background: #639EE4;
     border: 1px solid #639EE4;
@@ -314,7 +315,7 @@ li.one-third {
     margin: 0 auto;
     max-width: 150px;
     text-decoration: none;
-}
+}*/
 
 .sign-up-now .small {
     color: #333333;
@@ -323,46 +324,47 @@ li.one-third {
     text-align: center;
 }
 
-/*OMG WHY WON'T THIS BUTTON CENTER????*/
-
-
-
 /*FOOTER*/
+
 footer {
     background-color: #639EE4;
+    bottom: -25px;
+    min-height: 75px;
+}
+
+/*footer .footer-links .copyright {
     color: #FFFFFF;
-    height: 50px;
-    position: relative;
+    display: inline;
+    position: absolute;
     overflow: hidden;
     z-index: 0;
+}*/
+
+.footer-links {
+    position: relative;
+    top:10px;
 }
 
-footer nav ul li {
+footer .footer-links ul li {
     display: inline-block;
     list-style-type: none;
-    vertical-align: center;
 }
 
-footer nav .footer-links a {
+footer .footer-links a {
     color: #FFFFFF;
     float: left;
     font-size: 14px;
     margin: 10px auto 0;
-    text-align: left;
     text-decoration: none;
 }
 
-footer p, footer nav ul  {
+footer .copyright-block {
+    color: #FFFFFF;
     font-size: 14px;
-    margin: 10px auto 0;
+    position: relative;
+    right: 3%;
+    bottom: 20px;
 }
-
-footer .copyright-block li {
-    float: right;
-    text-align: right;
-    vertical-align: center;
-}
-/*WHY DOES THIS LOOK WEIRD? I WANT A NICE INLINE OF NAV TEXT, WITH C ON RIGHT SIDE*/
 
 /* DASHBOARD */
 
