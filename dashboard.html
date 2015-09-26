@@ -12,35 +12,40 @@
  
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css"><!--style.css-->
     <link rel="stylesheet" href="css/font-awesome.css">
  
 </head>
 
-<body class="dashboard">
-    <nav class="header"> <!--TOP NAV bar/blue-->
+
+<header class="h-dashboard">
+    <nav class="d-header"> <!--TOP NAV bar/blue-->
         <div class="logo">
-            <a href="blocbox_homepage.html" class="site-logo"><img src="images/logo.png" alt="Blocbox" /></a>
+            <a href="blocbox_homepage.html"><img src="images/logo.png" class="d-site-logo"alt="Blocbox"/></a>
         </div><!--/logo-->
-        <div class="settings">
-            <i class="fa fa-cog"></i>
-            <h4>Sara Clark</h4>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg">
+        <div class="d-settings">
+            <ul class="settings">
+                <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                <li><h4>Sara Clark</h4></li>
+                <li><img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"></li>
+            </ul>
         </div><!--/ID-->
     </nav><!--/nav-->
     <div class="menu"><!--Menu view and add bar/gray-->
-        <ul class="one-half">
-            <li><a href="#">View</a></li>
-            <li><a href="#">Add</a></li>
-        </ul><!--/menu-->
+        <!--<p style="text-align: center">-->
+        <p class="menu-list">
+            <p style="text-align: center"><a href="dashboard_images_only.html" class="view">View</a><a href="#" class="add">Add</a></p>
+        </p><!--/menu-->
+        <!--</p><text align center-->
     </div><!--/menu-->
+</header>   
+
     <!--Body of dashboard-->
+<body class="dashboard">   
     <section class="content">
-        <div class="container">
-            <div class="header">
+        <div class="view-type">
                 <h1>All Items</h1>
-            </div><!--/header-->
-        </div><!--/container of header-->
+        </div><!--/header-->
         <div class="container"><!--boxes-->
             <div class="content-item">
                 <div class="item-box">
