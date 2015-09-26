@@ -57,41 +57,6 @@ p {
     width:96%;
 }
 
-/* MEDIA QUERIES */
-
-@media (min-width: 768px) {
-   .container {
-     width: 750px;
-   }
-}
-
-@media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
-}
-
-@media (min-width: 1200px) {
-    .container {
-     width: 1170px;
-   }
-}
-
-@media (min-width: 1920px) {
-	.container {
-		width: 1900px;
-	}
- }
-
 
 /*HEADER*/
 
@@ -110,18 +75,15 @@ header {
 header img {
     max-height: 75px;
     position: relative;
-    top: 25px;
+    margin: 10px;
 }
 
  header .buttons {
+    background-color: #639EE4;
     display: inline-block;
     float: right;
     margin: 20;
     text-align: right;
-    vertical-align: middle;
-    position: relative;
-    left:50px;
-    bottom: 50px;
 }
 
 header nav ul > li {
@@ -324,6 +286,10 @@ li.one-third {
     text-align: center;
 }
 
+.sign-up-now {
+    margin-top: 40px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -340,12 +306,12 @@ footer {
     z-index: 0;
 }*/
 
-.footer-links {
+/*.footer-links {
     position: relative;
     top:10px;
-}
+}*/
 
-footer .footer-links ul li {
+footer .footer-links li {
     display: inline-block;
     list-style-type: none;
 }
@@ -354,47 +320,58 @@ footer .footer-links a {
     color: #FFFFFF;
     float: left;
     font-size: 14px;
-    margin: 10px auto 0;
     text-decoration: none;
 }
 
 footer .copyright-block {
-    color: #FFFFFF;
-    font-size: 14px;
-    position: relative;
-    right: 3%;
-    bottom: 20px;
-}
-
-/* DASHBOARD */
-
-.h-dashboard nav {
     background-color: #639EE4;
     color: #FFFFFF;
-    height: 75px;
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-}
-
-.settings li {
-    list-style-type: none;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-.settings img {
-    max-height: 50px;
-    max-width: 50px;
-}
-
-.h-dashboard .settings {
-    display: inline-block;
     float: right;
+    font-size: 14px;
+    list-style-type: none;
+    text-align: right;
+
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+}
+
+@media (min-width: 1200px) {
+    .container {
+     width: 1170px;
+   }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 1900px;
+    }
+ }
+
+
+
+
+
 
 
 
