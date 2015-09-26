@@ -1,0 +1,187 @@
+
+body {
+    color:#333333;
+    font-family: "Muli", Helvetica, sans-serif;
+   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ovo", Times, serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size:16px;
+    font-weight: 100;
+    line-height: 19px;
+}
+
+ /* GRID */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.one-half, .one-third, .one-fourth {
+    float:left;
+    margin:0 2% 20px;
+    min-height: 1px;
+    position:relative;
+    width:96%;
+}
+
+
+/* DASHBOARD */
+
+/*HEADER BAR*/
+
+.dashboard {
+    background-color: #F9F9F9;
+}
+
+.d-header {
+    background-color: #639EE4;
+    color: #FFFFFF;
+    height: 75px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    left:0;
+    right: 0;
+    top: 0;
+}
+
+.d-site-logo {
+    max-height: 50px;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+.settings img {
+    border-radius: 4px;
+    max-height: 50px;
+    position: relative;
+    bottom: 160px;
+    left: 20px;
+}
+
+.settings h4 {
+    font-size: 20px;
+    position: relative;
+    bottom: 80px;
+    right: 90px;
+}
+
+.settings a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    bottom: 30px;
+    right: 120px;
+}
+
+.settings a:hover {
+    color: #333333;
+}
+
+.settings {
+    float: right;
+    list-style-type: none;
+}
+
+/* SECONDARY NAV BAR*/
+
+.menu {
+    background-color: #EAEAEA;
+    max-height: 75px;
+    width:100%;
+    position: relative;
+    bottom: 20px;
+}
+
+.menu .menu-list {
+    display: inline;
+    list-style-type: none;
+}
+
+.menu a {
+    color: #639EE4;
+    font-size: 24px;
+    padding: 150px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #333333;
+}
+
+/*CONTENT/BODY*/
+
+.content {
+   padding: 1em 1% 1.5em;
+   float:right;
+   width:98%;
+   position: relative;
+   bottom: 100px;
+ }
+ .content .header {
+   margin:0 1% 20px;
+ }
+ .content .header h1 {
+   font-family: "Muli", Helvetica, Arial, sans-serif;
+   font-weight: 100;
+   margin:0 0 30px;
+   font-size: 36px;
+   color: #3498DB;
+   line-height: 44px;
+   float: left;
+   display:inline-block;
+ }
+ .content .header > a {
+   float:right;
+ }
+ .content-item {
+   width:96%;
+   margin:0 2% 25px;
+   float:left;
+   display:block;
+ }
+ .item-box {
+   display:block;
+   height:230px;
+   background: #FFFFFF;
+   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+   position: relative;
+   overflow: hidden;
+   padding:20px;
+ }
+
+.item-box a {
+    color:#333333;
+    text-decoration: none;
+}
+
+.item-box a:hover {
+    color: #639EE4;
+}
+
