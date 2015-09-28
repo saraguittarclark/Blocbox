@@ -57,41 +57,6 @@ p {
     width:96%;
 }
 
-/* MEDIA QUERIES */
-
-@media (min-width: 768px) {
-   .container {
-     width: 750px;
-   }
-}
-
-@media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
-}
-
-@media (min-width: 1200px) {
-    .container {
-     width: 1170px;
-   }
-}
-
-@media (min-width: 1920px) {
-	.container {
-		width: 1900px;
-	}
- }
-
 
 /*HEADER*/
 
@@ -107,21 +72,20 @@ header {
     top: 0;
 }
 
-header img {
+.site-logo {
+    float: left;
     max-height: 75px;
     position: relative;
-    top: 25px;
+    margin: 10px;
 }
 
- header .buttons {
+.buttons {
+    background-color: #639EE4;
+    color: #FFFFFF;
     display: inline-block;
     float: right;
-    margin: 20;
+    margin: 15px;
     text-align: right;
-    vertical-align: middle;
-    position: relative;
-    left:50px;
-    bottom: 50px;
 }
 
 header nav ul > li {
@@ -253,10 +217,6 @@ header nav ul > li.btn-outline:hover > a {
     text-align: center;
  }
 
-/*.box-frame {
-    background-color: #FFFFFF;
-}*/
-
 .box {
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -293,29 +253,9 @@ li.one-third {
     text-align: center;
 }
 
-/*.container li {
-    color: #333333;
-    font-size: 20px;
-    line-height: 40px;
-    list-style-type: none;
-}*/
-
 .container span {
     text-decoration: underline;
 }
-
-
-/*/.sign-up-now .btn {
-    text-align: center;
-    background: #639EE4;
-    border: 1px solid #639EE4;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-family: "Muli", sans-serif;
-    margin: 0 auto;
-    max-width: 150px;
-    text-decoration: none;
-}*/
 
 .sign-up-now .small {
     color: #333333;
@@ -324,7 +264,11 @@ li.one-third {
     text-align: center;
 }
 
-/*FOOTER*/
+.sign-up-now {
+    margin-top: 40px;
+}
+
+/*OLD FOOTER
 
 footer {
     background-color: #639EE4;
@@ -332,20 +276,7 @@ footer {
     min-height: 75px;
 }
 
-/*footer .footer-links .copyright {
-    color: #FFFFFF;
-    display: inline;
-    position: absolute;
-    overflow: hidden;
-    z-index: 0;
-}*/
-
-.footer-links {
-    position: relative;
-    top:10px;
-}
-
-footer .footer-links ul li {
+footer .footer-links li {
     display: inline-block;
     list-style-type: none;
 }
@@ -354,47 +285,96 @@ footer .footer-links a {
     color: #FFFFFF;
     float: left;
     font-size: 14px;
-    margin: 10px auto 0;
     text-decoration: none;
 }
 
 footer .copyright-block {
-    color: #FFFFFF;
-    font-size: 14px;
-    position: relative;
-    right: 3%;
-    bottom: 20px;
-}
-
-/* DASHBOARD */
-
-.h-dashboard nav {
     background-color: #639EE4;
     color: #FFFFFF;
-    height: 75px;
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-}
-
-.settings li {
-    list-style-type: none;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-.settings img {
-    max-height: 50px;
-    max-width: 50px;
-}
-
-.h-dashboard .settings {
-    display: inline-block;
     float: right;
+    font-size: 14px;
+    list-style-type: none;
+    text-align: right;
+
+} */
+
+/*FOOTER*/
+.footer {
+    font-size: 14px;
+    max-height: 75px;
+    clear: both;
 }
+
+.footer-links {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    top: 20px;
+}
+
+.footer-links > li {
+    display: inline-block;
+}
+
+.footer-links > li > a {
+    text-decoration: none;
+    color: #639EE4;
+}
+
+.footer-links > li > a:hover {
+    color: #333333;
+}
+
+.copyright-block {
+    color: #639EE4;
+    font-size: 14px;
+    float: right;
+    margin-right: 25px;
+    text-align: left;
+    position: relative;
+    top: 20px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+}
+
+@media (min-width: 1200px) {
+    .container {
+     width: 1170px;
+   }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 1900px;
+    }
+ }
+
+
+
+
+
 
 
 
