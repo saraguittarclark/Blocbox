@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/dashboard.css"><!--style.css-->
     <link rel="stylesheet" href="css/font-awesome.css">
+    <!--<link rel="stylesheet" href="css/dropit.css">-->
+
 </head>
 
 
@@ -25,6 +27,11 @@
         <div class="one-half"> <!--Settings-->
             <ul class="settings">
                 <li><a href="#" class="gear"><i class="fa fa-cog"></i></a></li>
+                    <ul class = "drop-settings">
+                        <li><a href="#"><i class="fa fa-cog"></i>My Account</a></li>
+                        <li><a href="#"><i class="fa fa-group"></i>My Collaborators</a></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                    </ul>
                 <li><h4>Sara Clark</h4></li>
                 <li><img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"></li>
             </ul><!--settings-->
@@ -37,7 +44,14 @@
 
     <div class="menu"><!--Menu view and add bar/gray-->
         <p class="menu-list" style="text-align: center">
-            <a href="dashboard_images_only.html" class="view" "one-fourth">View</a>
+            <a href="#" class="view" "one-fourth">View</a>
+                <ul class ="drop-view">
+                    <li><a href="#"><i class="fa fa-th"></i> All Items</a></li>
+                    <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+                    <li><a href="dashboard_images_only.html"><i class="fa fa-picture-o"></i> Images</a></li>
+                    <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+                    <li><a href="#"><i class="fa fa-inbox"></i> Boxes</a></li>
+                </ul>
             <a href="#" class="add">Add</a>
         </p><!--/menu-list-->
     </div><!--/menu-->
@@ -106,5 +120,12 @@
     </div><!--/copyright block-->
     </div><!--/div footer-->
 </footer>
+
+<!--<script src="js/jquery-2.1.4.min.js"></script>-->
+<!--<script src="js/dropit.js"></script>-->
+<script type="text/javascript" src="js/app.js"></script>
+<!--<script type="text/javascript">
+    $(".menu").dropit();-->
+</script>
 </body>
 </html>
