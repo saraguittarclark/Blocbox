@@ -1,12 +1,8 @@
 
-body {
+body, h1, h2, h3, h4, h5, h6 {
     color:#333333;
     font-family: "Muli", Helvetica, sans-serif;
    
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Ovo", Times, serif;
 }
 
 h2 {
@@ -17,14 +13,13 @@ h2 {
 
 p {
     font-size:16px;
-    font-weight: 100;
     line-height: 19px;
 }
 
  /* GRID */
-.container {
-    margin-right: auto;
-    margin-left: auto;
+/*.container {
+    margin-right: 25px;
+    margin-left: 25px;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
@@ -38,12 +33,12 @@ p {
 
 .container:after {
     clear: both;
-}
+}*/
 
 .one-half, .one-third, .one-fourth {
     float:left;
     margin:0 2% 20px;
-    min-height: 1px;
+    min-height: 30px;
     position:relative;
     width:96%;
 }
@@ -62,7 +57,7 @@ p {
     color: #FFFFFF;
     height: 75px;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     position: relative;
     left:0;
     right: 0;
@@ -70,64 +65,89 @@ p {
 }
 
 .d-site-logo {
+    float: left;
     max-height: 50px;
+    margin-left: 60px;
     position: relative;
     top: 10px;
     left: 25px;
 }
 
+.settings {
+    float: right;
+    list-style-type: none;
+    margin-right: 60px;
+    position: relative;
+    bottom: 75px;
+    right: 25px;
+}
+
+.settings li {
+  display: inline-block;
+  /*margin-bottom: 10px;
+  padding: 5px;*/
+}
+
 .settings img {
     border-radius: 4px;
     max-height: 50px;
-    position: relative;
+    /*position: relative;
     bottom: 160px;
-    left: 20px;
+    left: 20px;*/
 }
 
 .settings h4 {
-    font-size: 20px;
-    position: relative;
-    bottom: 80px;
-    right: 90px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 20px; 
 }
 
 .settings a {
     color: #FFFFFF;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none; /*
     position: relative;
     bottom: 30px;
-    right: 120px;
+    right: 120px; */
 }
 
 .settings a:hover {
     color: #333333;
 }
 
-.settings {
-    float: right;
-    list-style-type: none;
-}
+
 
 /* SECONDARY NAV BAR*/
 
 .menu {
     background-color: #EAEAEA;
-    max-height: 75px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    max-height: 40px;
+    position: absolute;
     width:100%;
-    position: relative;
-    bottom: 20px;
 }
 
-.menu .menu-list {
+.menu-list {
     display: inline;
     list-style-type: none;
 }
 
-.menu a {
+.view {
+    float: left;
+}
+
+.add {
+    float: right;
+}
+
+
+.menu-list a {
     color: #639EE4;
     font-size: 24px;
-    padding: 150px;
+    padding: 5px;
+    margin-left: 110px;
+    margin-right: 110px;
     text-decoration: none;
 }
 
@@ -135,48 +155,57 @@ p {
     color: #333333;
 }
 
+.settings li {
+    margin-left: 10px;
+}
+
 /*CONTENT/BODY*/
 
-.content {
-   padding: 1em 1% 1.5em;
-   float:right;
-   width:98%;
-   position: relative;
-   bottom: 100px;
+ .content {
+    float:right;
+    padding:1em 1% 1em;
+    width:98%;
+    position: relative;
+    bottom: 80px;
  }
- .content .header {
-   margin:0 1% 20px;
+
+ .view-type {
+    margin: 0 1% 20px;
  }
- .content .header h1 {
-   font-family: "Muli", Helvetica, Arial, sans-serif;
-   font-weight: 100;
-   margin:0 0 30px;
-   font-size: 36px;
-   color: #3498DB;
-   line-height: 44px;
-   float: left;
-   display:inline-block;
+
+ .notes {
+    position: relative;
+    clear: both;
  }
- .content .header > a {
-   float:right;
+
+ .content h1 {
+    font-size: 36px;
+    color: #333333;
+    float: left;
+    display:inline-block;
+    line-height: 44px;
+    margin:0 0 30px;
  }
+
  .content-item {
    width:96%;
    margin:0 2% 25px;
    float:left;
    display:block;
  }
+
  .item-box {
-   display:block;
-   height:230px;
-   background: #FFFFFF;
-   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
-   position: relative;
-   overflow: hidden;
-   padding:20px;
+    display:block;
+    height:230px;
+    max-width: 230px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.40);
+    position: relative;
+    overflow: hidden;
+    padding:20px;
  }
 
-.item-box a {
+ .item-box a {
     color:#333333;
     text-decoration: none;
 }
@@ -184,4 +213,97 @@ p {
 .item-box a:hover {
     color: #639EE4;
 }
+
+.item-box > .img-note {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*FOOTER*/
+.footer {
+    font-size: 14px;
+    max-height: 75px;
+    clear: both;
+}
+
+.footer-links {
+    float: left;
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+.footer-links > li {
+    display: inline-block;
+}
+
+.footer-links > li > a {
+    text-decoration: none;
+    color: #639EE4;
+}
+
+.footer-links > li > a:hover {
+    color: #333333;
+}
+
+.copyright-block {
+    color: #639EE4;
+    font-size: 14px;
+    float: right;
+    margin-right: 100px;
+    text-align: left;
+}
+
+/*BLOC MEDIA QUERIES*/
+
+ /* Larger Mobile Devices */
+ @media (min-width:460px) {
+   .content {
+     padding:1.5em 1%;
+     float:right;
+     width:90%;
+     position: relative;
+   }
+   .content-item {
+     width:46%;
+     margin:0 2% 25px;
+     float:left;
+     display:block;
+   }
+ }
+/* Tablets */
+ @media (min-width:768px) {
+   .content {
+     padding:1.5em 5%;
+     float:right;
+     width:90%;
+     position: relative;
+   }
+   .content > .container {
+     width:700px;
+   }
+   .content-item {
+     width:31.33333%;
+     margin:0 1% 25px;
+   }
+ }
+/* Laptops and Desktops */
+ @media (min-width:992px) {
+   .content {
+     padding:1em 1%;
+     float:right;
+     width:92%;
+     position: relative;
+   }
+   .content > .container {
+     width:auto;
+   }
+   .content-item {
+     width:20%;
+     margin:0 2% 25px;
+   }
+ }
 
