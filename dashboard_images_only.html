@@ -12,127 +12,121 @@
  
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css"><!--style.css-->
     <link rel="stylesheet" href="css/font-awesome.css">
- 
 </head>
 
-<body class="dashboard">
-    <nav class="header"> <!--TOP NAV bar/blue-->
-        <div class="logo">
-            <a href="blocbox_homepage.html" class="site-logo"><img src="images/logo.png" alt="Blocbox" /></a>
-        </div><!--/logo-->
-        <div class="settings">
-            <i class="fa fa-cog"></i>
-            <h4>Sara Clark</h4>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg">
-        </div><!--/ID-->
+
+<header class="h-dashboard">
+    <nav class="d-header"> <!--Logo-->
+        <div class="one-half">
+            <a href="blocbox_homepage.html"><img src="images/logo.png" class="d-site-logo"alt="Blocbox"/></a>
+        </div><!--/one-half logo-->
+        <div class="one-half"> <!--Settings-->
+            <ul class="settings">
+                <li><a href="#" class="gear"><i class="fa fa-cog"></i></a></li>
+                <li><h4>Sara Clark</h4></li>
+                <li><img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"></li>
+            </ul><!--settings-->
+        </div><!--/one-half-->
     </nav><!--/nav-->
+</header>   
+
+<!--Body of dashboard-->
+<body class="dashboard">   
+
     <div class="menu"><!--Menu view and add bar/gray-->
-        <ul class="one-half">
-            <li><a href="#">View</a></li>
-            <li><a href="#">Add</a></li>
-        </ul><!--/menu-->
+        <p class="menu-list" style="text-align: center">
+            <a href="dashboard_images_only.html" class="view" "one-fourth">View</a>
+            <a href="#" class="add">Add</a>
+        </p><!--/menu-list-->
     </div><!--/menu-->
-    <!--Body of dashboard-->
-    <section class="content">
+
+
+<section class="content">
+        <div class="view-type">
+                <h1>All Items</h1>
+        </div><!--/view type-->
+    <div class="notes">
         <div class="container">
-            <div class="header">
-                <h1>Images</h1>
-            </div><!--/header-->
-        </div><!--/container of header-->
-        <div class="container"><!--ROW 1 boxes-->
             <div class="content-item">
                 <div class="item-box">
-                    <img src="https://static.pexels.com/photos/6710/light-fashion-hands-woman-medium.jpg">
-                </div>
-            </div><!--/box-->
+                    <img src="https://static.pexels.com/photos/6710/light-fashion-hands-woman-medium.jpg" class="img-note">
+                </div><!--/item-box-->
+            </div><!--/content-item-->
+        </div><!--/container-->
+        <div class="container">
             <div class="content-item">
                 <div class="item-box">
-                    <img src="https://static.pexels.com/photos/8818/nature-trees-fog-grass-medium.jpg">
-                </div>
-            </div><!--/box-->
+                    <img src="https://static.pexels.com/photos/8818/nature-trees-fog-grass-medium.jpg" class="img-note">
+                </div><!--/item-box-->
+            </div><!--/content-item-->
+        </div><!--/box-->
+        <div class="container">
             <div class="content-item">
                 <div class="item-box">
-                    <img src="https://static.pexels.com/photos/2286/restaurant-people-alcohol-bar-medium.jpg">
-                </div>
-            </div><!--/box-->
+                    <img src="https://static.pexels.com/photos/2286/restaurant-people-alcohol-bar-medium.jpg" class="img-note"> 
+                </div><!--/item-box-->
+            </div><!--content-item-->
+        </div><!--/box-->
+        <div class="container">
             <div class="content-item">
                 <div class="item-box">
-                    <img src="https://static.pexels.com/photos/9298/light-art-house-architecture-medium.jpg">
+                    <<img src="https://static.pexels.com/photos/9298/light-art-house-architecture-medium.jpg" class="img-note">
                 </div>
             </div><!--/box-->
-
-                    <div class="container"><!--ROW 2 boxes-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/7794/usa-nyc-ny-new-york-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/8457/sport-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/7697/pexels-photo-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/9098/pexels-photo-medium.jpg">
-                </div>
-            </div><!--/box-->
-
-                    <div class="container"><!--ROW 3 boxes-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/8989/pexels-photo-medium.jpeg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/7494/pexels-photo-medium.jpeg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/8943/computer-motherboard-pc-wires-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/8987/pexels-photo-medium.jpeg">
-                </div>
-            </div><!--/box-->
-
-                    <div class="container"><!--ROW 4 boxes-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/7659/pexels-photo-medium.jpeg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/9028/pexels-photo-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/9069/food-pizza-fastfood-medium.jpg">
-                </div>
-            </div><!--/box-->
-            <div class="content-item">
-                <div class="item-box">
-                    <img src="https://static.pexels.com/photos/6941/snow-mountains-nature-summer-medium.jpg">
-                </div>
-            </div><!--/box-->
-
-
         </div><!--/boxes-->
-    </section><!--content-->
 
+        <div class="container">
+            <div class="content-item">
+                <div class="item-box">
+                    <img src="https://static.pexels.com/photos/7794/usa-nyc-ny-new-york-medium.jpg" class="img-note">
+                </div>
+            </div><!--/box-->
+        </div><!--/boxes-->
 
+        <div class="container">
+            <div class="content-item">
+                <div class="item-box">
+                   <img src="https://static.pexels.com/photos/8457/sport-medium.jpg" class="img-note">
+                </div>
+            </div><!--/box-->
+        </div><!--/boxes-->
+
+        <div class="container">
+            <div class="content-item">
+                <div class="item-box">
+                   <img src="https://static.pexels.com/photos/9098/pexels-photo-medium.jpg" class="img-note">
+                </div>
+            </div><!--/box-->
+        </div><!--/boxes-->
+
+        <div class="container">
+            <div class="content-item">
+                <div class="item-box">
+                  <img src="https://static.pexels.com/photos/7494/pexels-photo-medium.jpeg" class="img-note">
+                </div>
+            </div><!--/box-->
+        </div><!--/boxes-->
+
+    </div><!--/notes-->
+</section><!--content-->
+<!-- Footer -->
+<footer>
+    <div class="footer">
+        <div class="left">
+            <ul class="footer-links">
+                <li><a href="">Terms |</a></li>
+                <li><a href="">Privacy Policy |</a></li>
+                <li><a href="">Contact Us |</a></li> 
+                <li><a href="">About Us |</a></li> 
+                <li><a href="">Twitter</a></li>
+            </ul><!--/footer links-->
+        </div><!--footer links-->
+    <div class="right">
+        <p class="copyright-block">&copy; 2015. <strong>Blocbox</strong> - All Rights Reserved.</p> 
+    </div><!--/copyright block-->
+    </div><!--/div footer-->
+</footer>
 </body>
 </html>
