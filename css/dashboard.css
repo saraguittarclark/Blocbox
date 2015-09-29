@@ -59,21 +59,22 @@ p {
 .settings {
     float: right;
     list-style-type: none;
-    margin-right: 60px;
+    margin-right: 50px;
     position: relative;
     bottom: 75px;
     right: 25px;
 }
 
 .settings li {
-  display: inline-block;
-  /*margin-bottom: 10px;
-  padding: 5px;*/
+   display: inline-block;
+   /*margin-bottom: 10px;
+   padding: 5px;*/
 }
 
 .settings img {
     border-radius: 4px;
     max-height: 50px;
+    margin-left: 5px;
     /*position: relative;
     bottom: 160px;
     left: 20px;*/
@@ -88,10 +89,9 @@ p {
 .settings a {
     color: #FFFFFF;
     font-size: 20px;
-    text-decoration: none; /*
+    margin: 10px;
+    text-decoration: none;
     position: relative;
-    bottom: 30px;
-    right: 120px; */
 }
 
 .settings a:hover {
@@ -114,33 +114,26 @@ p {
 .menu-list {
     display: inline;
     list-style-type: none;
+    margin-left: 50px;
 }
 
-.view {
-    float: left;
+.menu-list > li {
+    color: #639EE4;
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px;
 }
-
-.add {
-    float: right;
-}
-
 
 .menu-list a {
     color: #639EE4;
-    font-size: 24px;
-    padding: 5px;
-    margin-left: 110px;
-    margin-right: 110px;
     text-decoration: none;
+    margin-right: 40px;
 }
 
-.menu a:hover {
+.menu-list > a:hover {
     color: #333333;
 }
 
-.settings li {
-    margin-left: 10px;
-}
 
 /*CONTENT/BODY*/
 
@@ -206,6 +199,11 @@ p {
     right: 0;
 }
 
+.list li {
+    list-style-type: none;
+    display: block;
+}
+
 /*FOOTER*/
 .footer {
     font-size: 14px;
@@ -213,10 +211,13 @@ p {
     clear: both;
 }
 
+.left {
+    margin-left: 50px;
+}
+
 .footer-links {
     float: left;
     list-style-type: none;
-    margin-left: 60px;
 }
 
 .footer-links > li {
@@ -262,33 +263,86 @@ p {
    }
  }
 
- /*Dropdowns!!!!!*/
+ /*DROPDOWNS!!!!!*/
 
- .drop-settings {
+ul ul {
+    display: none;
+}
+
+ul li {
+    display: inline;
+    position: relative;
+}
+
+ul .view:hover .drop {
     background-color: #FFFFFF;
+    color: #639EE4;
     display: block;
-    list-style-type: none;
-    min-width: 100px;
-    margin: 10px;
-    font-size: 16px;
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    z-index: 1000;
+}
+
+ul .view:hover .drop li a {
+    margin-left: 5px;
+    margin-right:auto;
     text-align: left;
- }
+    font-size: 18px;
+}
 
- .drop-view {
-    background-color: #FFFFFF;
+ul .view:hover .drop i {
+    margin-right: 5px;
+}
+
+ul .view:hover .drop li a:hover {
+    color: #333333;
+}
+
+.settings .view:hover .drop {
+    left: 5px;
+}
+
+.settings .view:hover .drop li a {
+    color: #639EE4;
+    font-size: 18px;
+    right: 40px;
+}
+
+.settings .view:hover .drop a:hover{
+    color: #333333;
+}
+
+/*.menu-list .view:hover .drop {
+    left: 100px;
+} */
+
+.drop {
+    border-radius: 4px;
+}
+
+ul li ul li {
     display: block;
-    list-style-type: none;
-    min-width: 100px;
-    margin: 10px;
-    font-size: 16px;
+}
+
+/*.settings .view .drop li a {
+    color: #639EE4;
+    float: left;
     text-align: left;
     text-decoration: none;
- }
+}
 
- .drop-view li a {
-    color: #639EE4;
+.menu-list .view .drop li a {
+    margin-left: 5px;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
 
- }
+.settings .view .drop li a:hover {
+    color: #333333;
+}
+
 
 /* Tablets */
  @media (min-width:768px) {
