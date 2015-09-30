@@ -11,8 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Ovo|Muli:300' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dashboard.css"><!--style.css-->
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/dashboard-rev.css"><!--dashboard.css-->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/dropit.css">
 
@@ -26,9 +26,9 @@
         </div><!--/one-half logo-->
         <div class="one-half"> <!--Settings-->
             <ul class="settings">
-                <li class="view">
+                <li class="view-settings">
                 <a href="#" class="gear"><i class="fa fa-cog"></i></a>
-                    <ul class="drop">
+                    <ul class="drop-settings">
                         <li>
                             <a href="#"><i class="fa fa-cog"></i>My Account</a>
                         </li>
@@ -52,11 +52,11 @@
 
     <div class="menu"><!--Menu view and add bar/gray-->
         <ul class="menu-list">
-            <li class="view">
-            <div class="one-half"><a href="#">View</a></div>
-                <ul class="drop">
+            <li class="view-nav">
+            <a href="#">View</a>
+                <ul class="drop-nav">
                     <li>
-                        <a href="#"><i class="fa fa-th"></i>All Items</a>
+                        <a class ="active" href="#"><i class="fa fa-th"></i>All Items</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-file-o"></i>Notes</a>
@@ -72,7 +72,7 @@
                     </li>
                 </ul>
             </li><!--/drop-->
-            <li><div class="one-half" class="add"><a href="#">Add</a></div></li>
+            <li class="view-add"><a href="#">Add</a></li>
         </ul><!--/menu-list-->
     </div><!--/menu-->
 
