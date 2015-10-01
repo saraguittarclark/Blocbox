@@ -84,6 +84,7 @@ p {
     position: absolute;
     min-width: 200px;
     z-index: 999;
+    padding-left: 0;
 }
 
 .view-settings:hover .drop-settings {
@@ -158,6 +159,7 @@ p {
     min-width: 150px;
     text-align: left;
     z-index: 999;
+    padding-left: 0;
 }
 
 .drop-nav .active {
