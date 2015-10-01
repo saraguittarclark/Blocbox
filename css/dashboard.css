@@ -104,10 +104,9 @@ p {
 
 .menu {
     background-color: #EAEAEA;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    max-height: 40px;
-    position: absolute;
+    /* margin-top: 0px;
+    margin-bottom: 10px; */
+    height: 40px;
     width:100%;
 }
 
@@ -241,27 +240,7 @@ p {
     text-align: left;
 }
 
-/*BLOC MEDIA QUERIES*/
 
- /* Larger Mobile Devices */
- @media (min-width:460px) {
-   .content {
-     padding:1.5em 1%;
-     float:right;
-     width:90%;
-     position: relative;
-   }
-   .content-item {
-     width:46%;
-     margin:0 2% 25px;
-     float:left;
-     display:block;
-   }
-   .footer-links {
-    margin-right: auto;
-    margin-left: auto;
-   }
- }
 
  /*DROPDOWNS!!!!!*/
 
@@ -343,6 +322,28 @@ ul li ul li {
     color: #333333;
 }
 
+
+/*BLOC MEDIA QUERIES*/
+
+ /* Larger Mobile Devices */
+ @media (min-width:460px) {
+   .content {
+     padding:1.5em 1%;
+     float:right;
+     width:90%;
+     position: relative;
+   }
+   .content-item {
+     width:46%;
+     margin:0 2% 25px;
+     float:left;
+     display:block;
+   }
+   .footer-links {
+    margin-right: auto;
+    margin-left: auto;
+   }
+ }
 
 /* Tablets */
  @media (min-width:768px) {

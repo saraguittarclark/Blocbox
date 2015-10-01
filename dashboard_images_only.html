@@ -12,7 +12,7 @@
  
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dashboard.css"><!--style.css-->
+    <link rel="stylesheet" href="css/dashboard-rev.css"><!--style.css-->
     <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
@@ -24,7 +24,20 @@
         </div><!--/one-half logo-->
         <div class="one-half"> <!--Settings-->
             <ul class="settings">
-                <li><a href="#" class="gear"><i class="fa fa-cog"></i></a></li>
+                <li class="view-settings">
+                <a href="#" class="gear"><i class="fa fa-cog"></i></a>
+                    <ul class="drop-settings">
+                        <li>
+                            <a href="#"><i class="fa fa-cog"></i>My Account</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-group"></i>My Collaborators</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out"></i>Sign Out</a>
+                        </li>
+                    </ul>
+                </li><!--drop-->
                 <li><h4>Sara Clark</h4></li>
                 <li><img src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"></li>
             </ul><!--settings-->
@@ -36,16 +49,35 @@
 <body class="dashboard">   
 
     <div class="menu"><!--Menu view and add bar/gray-->
-        <p class="menu-list" style="text-align: center">
-            <a href="dashboard_images_only.html" class="view" "one-fourth">View</a>
-            <a href="#" class="add">Add</a>
-        </p><!--/menu-list-->
+        <ul class="menu-list">
+            <li class="view-nav">
+            <a href="#">View</a>
+                <ul class="drop-nav">
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-th"></i>All Items</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-file-o"></i>Notes</a>
+                    </li>
+                    <li>
+                        <a class ="active" href="dashboard_images_only.html"><i class="fa fa-picture-o"></i>Images</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-link"></i>Links</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-inbox"></i>Boxes</a>
+                    </li>
+                </ul>
+            </li><!--/drop-->
+            <li class="view-add"><a href="#">Add</a></li>
+        </ul><!--/menu-list-->
     </div><!--/menu-->
 
 
 <section class="content">
         <div class="view-type">
-                <h1>All Items</h1>
+                <h1>Images</h1>
         </div><!--/view type-->
     <div class="notes">
         <div class="container">

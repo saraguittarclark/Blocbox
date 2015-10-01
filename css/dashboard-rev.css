@@ -20,8 +20,8 @@ p {
 /*HEADER*/
 
 .dashboard {
-    background-color: #F9F9F9;
-}
+    background-color: #F9F9F9; 
+} /* set background color for document */
 
 .d-header {
     background-color: #639EE4;
@@ -30,14 +30,14 @@ p {
     margin-bottom: 0px;
     padding: 0;
     width: 100%;
-}
+} /* set header colors, height, re-defaulted margins */
 
 
 .d-site-logo {
     float: left;
     margin-left: 60px;
     margin-top: 10px;
-}
+} /* set logo placement */
 
 
 .settings {
@@ -46,72 +46,70 @@ p {
     margin-right: 50px;
     position: relative;
     top: 15px;
-}
+} /* set the settings buttons placement and removed ul/li fancy */
 
 .settings > li {
    display: inline-block;
-}
+} /* displayed settings buttons in one line */
 
 
 .settings img {
     border-radius: 4px;
     max-height: 50px;
     margin-left: 5px;
-}
+} /* reset the picture into 50px frame and curved borders */
 
 .settings h4 {
     color: #FFFFFF;
     font-weight: lighter;
     font-size: 20px; 
-}
+} /* set name text color and size */
 
 .settings a {
     color: #FFFFFF;
     font-size: 20px;
     margin: 10px;
     text-decoration: none;
-}
+} /* set the gear color, size */
 
 .settings a:hover {
     color: #333333;
-}
+} /* made gear fancy with hover */
 
 .drop-settings {
 	list-style-type: none;
 	background-color: #FFFFFF;
     border-radius: 4px;
-    display: none;
+    display: none; /* on hover displayed */
     position: absolute;
     min-width: 200px;
-    z-index: 999;
-    padding-left: 0;
-}
+    z-index: 999; /* moves to "top" */
+    padding-left: 0; /* removes default button margin */
+} /* settings dropdown menu! hidden first. absolute display - relative to gear */
 
 .view-settings:hover .drop-settings {
 	display: block;
-}
+} /* on gear hover, the dropdown is revealed */
 
 .view-settings:hover .drop-settings li {
     display: block;
     list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} /* on gear hover, the dropdown li appear as such  - padding between the li lines, no decoration  */
 
 .drop-settings a {
 	color: #639EE4;
 	font-size: 16px;
-	line-height: 20px;
-	padding: 10px;
-}
+} /* the links in the dropdown look like */
 
 .drop-settings i {
 	margin-right: 10px;
-}
+} /* a little space between the fontawesome icon and text */
 
 .view-settings:hover .drop-settings a:hover {
     color: #333333;
-}
+} /* links are fancy on hover */
 
 /*MENU NAV BAR*/
 
@@ -119,79 +117,78 @@ p {
     background-color: #EAEAEA;
     height: 40px;
     position: relative;
-    bottom: 20px;
+    bottom: 20px; /* refuses to be beneath without moving up? */
     width:100%;
-}
+} /* gray secondary menu bar characteristics */
 
 .menu-list li {
 	display: inline-block;
-}
+} /* the view and add are in one line */
 
 .view-nav {
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
-}
+} /* places the "view" text */
 
 .view-add {
 	float: right;
 	margin-right: 40px;
 	margin-top: 10px;
-}
+} /* places the "add" text */
 
 .menu-list a {
     color: #639EE4;
     font-size: 20px;
     margin: 10px;
     text-decoration: none;
-}
+} /* styles the view and add text */
 
 .menu-list a:hover {
     color: #333333;
-}
+} /* makes view and add fancy on hover */
 
 .drop-nav {
 	list-style-type: none;
 	background-color: #FFFFFF;
     border-radius: 4px;
-    display: none;
+    display: none; /* hidden */
     position: absolute;
     min-width: 150px;
     text-align: left;
     z-index: 999;
     padding-left: 0;
-}
+} /* view dropdown menu with all choices: all/notes/images/linkes/boxes */
 
 .drop-nav .active {
 	color: #333333;
 	text-decoration: underline;
-}
+} /* shows which of dropdown is displayed "all items" or "images" functional */
 
 .view-nav:hover .drop-nav {
 	display: block;
-}
+} /* displays dropdown menu on view hover */
 
 .view-nav:hover .drop-nav li {
     display: block;
     list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} /* displays dropdown on view hover, removes li styling */
 
 .drop-nav a {
 	color: #639EE4;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 10px;
-}
+} /* styles links within dropdown menu */
 
 .drop-nav i {
 	margin-right: 10px;
-}
+} /* little space between fontawesome and text */
 
 .view-nav:hover .drop-nav a:hover {
     color: #333333;
-}
+} /* making links fancy on hover */
 
 /*NOTES*/
 
@@ -201,13 +198,7 @@ p {
 .notes {
 	position: relative;
 	clear: both;
-}
-
- .content {
-    float: right;
-    padding: 1em 1% 1em;
-    width: 98%;
- }
+} /* moves notes down away from text */
 
  .content h1 {
     font-size: 36px;
@@ -216,14 +207,14 @@ p {
     display: inline-block;
     line-height: 44px;
     margin: 0 0 30px;
- }
+ } /* styles "all items" text */
 
  .content-item {
    width: 96%;
    margin: 0 2% 25px;
    float: left;
    display: block;
- }
+ } /* makes notes inline and next to each other */
 
  .item-box {
     display:block;
@@ -234,16 +225,21 @@ p {
     position: relative;
     overflow: hidden;
     padding:20px;
- }
+ } /* styles non-header text in the note */
 
  .item-box a {
     color:#333333;
     text-decoration: none;
-}
+} /* styles link text in the note */
 
 .item-box a:hover {
     color: #639EE4;
-}
+} /* styles link text in the note on hover */
+
+.item-box .favicon {
+    height: 25px;
+    width: 25px;
+} /* sets favicon dimensions */
 
 .item-box > .img-note {
     position: absolute;
@@ -252,42 +248,42 @@ p {
     top: 0;
     left: 0;
     right: 0;
-}
+} /* sets image notes styling */
 
 .list li {
     list-style-type: none;
     display: block;
-}
+} /* sets style for lists */
 
 /*FOOTER*/
 
-.footer {
+footer {
     font-size: 14px;
     max-height: 75px;
     clear: both;
-}
+} /* sets font and size for footer */
 
 .left {
     margin-left: 50px;
-}
+} /* sets links with margin, lined up with logo and notes */
 
 .footer-links {
     float: left;
     list-style-type: none;
-}
+} /* sets to left, removes li styling */
 
 .footer-links > li {
     display: inline-block;
-}
+} /* displays li in row */
 
 .footer-links > li > a {
     text-decoration: none;
     color: #639EE4;
-}
+} /* sets color and removes style for links */
 
 .footer-links > li > a:hover {
     color: #333333;
-}
+} /* fancy on hover */
 
 .copyright-block {
     color: #639EE4;
@@ -295,7 +291,7 @@ p {
     float: right;
     margin-right: 100px;
     text-align: left;
-}
+} /* sets style and positioning */
 
 /* MEDIA QUERIES*/
 
@@ -318,6 +314,7 @@ p {
  		display:block;
  	}
  	.footer-links {
+        font-size: 9px;
  		text-align: left;
  		position: relative;
  		right: 50px;
@@ -325,6 +322,7 @@ p {
  	} 
 
  	.copyright-block {
+        font-size: 9px;
  		margin-right: 0px;
  		text-align: center;
  	}	
@@ -347,11 +345,16 @@ p {
  	}
 
  	.footer-links {
+        font-size: 12px;
  		text-align: left;
  		position: relative;
  		right: 50px;
  		margin-left: 0px;
  	} 
+
+    .copyright-block {
+        font-size: 12px;
+    }
  }
 
  /* Laptops and Desktops */
