@@ -148,8 +148,9 @@ header nav ul > li.btn-outline:hover > a {
     text-decoration: none;
 } /* sets button styling */
 
-.btn:hover {
-    border: 5px solid #639EE4;
+.special {
+    background: #ff0000;
+    border: 5px solid #ff0000;
 } /* makes free trial button fancy */
 
 /* FEATURES */
