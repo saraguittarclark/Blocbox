@@ -364,6 +364,15 @@ footer {
  }
 
 
+ @media (min-width: 600px) {
+
+    .one-half, .one-third, .one-fourth {
+        float: none;
+        width: 100%;
+    }
+ }
+
+
 
 
 
