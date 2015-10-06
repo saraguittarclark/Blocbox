@@ -10,6 +10,9 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Ovo|Muli:300' rel='stylesheet' type='text/css'>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+
     <!-- CSS -->
     <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/dashboard-rev.css"><!--dashboard.css-->
@@ -20,7 +23,7 @@
 <header class="h-dashboard">
     <nav class="d-header"> <!--Logo-->
         <div class="one-half">
-            <a href="blocbox_homepage.html"><img src="images/logo.png" class="d-site-logo"alt="Blocbox"/></a>
+            <a href="index.html"><img src="images/logo.png" class="d-site-logo"alt="Blocbox"/></a>
         </div><!--/one-half logo-->
         <div class="one-half"> <!--Settings-->
             <ul class="settings">
@@ -139,11 +142,17 @@
     </div><!--/div footer-->
 </footer>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/dropit.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
-    $(".drop").dropit();
-</script>-->
+    $('.item-box').mouseenter(function (){
+        $('.item-box').not($(this)).css("opacity", "0.5");
+        $('item-box').not($(this)).css("transition", "2s");
+    });
+    $('.item-box').mouseleave(function(){
+        $('.item-box').not($(this)).css("opacity", "1");
+        $('item-box').not($(this)).css("transition", "2s");
+    });
+</script>
 
 </body>
 </html>
