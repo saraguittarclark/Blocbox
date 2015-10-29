@@ -134,7 +134,7 @@ header nav ul > li.btn-outline:hover > a {
 .hero img {
     display: block;
     margin:3em auto 0;
-} /* computer screen image (OUTDATED) */
+} /* computer screen image */
 
 /* FREE TRIAL BUTTON */
 
@@ -148,7 +148,7 @@ header nav ul > li.btn-outline:hover > a {
     text-decoration: none;
 } /* sets button styling */
 
-.special {
+.btn:hover {
     background: #ff0000;
     border: 5px solid #ff0000;
 } /* makes free trial button fancy */
@@ -162,12 +162,12 @@ header nav ul > li.btn-outline:hover > a {
  } /* sets some styles for features block */
 
 .features ul {
+    display: inline-block;
     margin: 0 auto;
     padding: 1em 0;
  } /* sets features triad with margin and padding */
 
 .features ul li {
-    display: inline-block;
     list-style-type: none;
  } /* sets features triad li in one line and removes li styles */
 
@@ -175,7 +175,6 @@ header nav ul > li.btn-outline:hover > a {
     color:#639EE4;
     font-size:60px;
     margin:0;
-    vertical-align: middle;
  } /* font awesome icons styling */
 
  .features h2 {
@@ -217,9 +216,9 @@ header nav ul > li.btn-outline:hover > a {
 
 .box {
     background-color: #FFFFFF;
+    float: left;
     list-style-type: none;
     min-height: 400px;
-    position: relative;
     text-align: center;
 } /* pricing plan individual box */
 
@@ -227,6 +226,7 @@ header nav ul > li.btn-outline:hover > a {
     background-color: #639EE4;
     color: #FFFFFF;
     font-size: 26px;
+    margin: 0;
     padding: 1em;
     text-decoration: none;
 } /* header for each plan */
@@ -238,12 +238,8 @@ header nav ul > li.btn-outline:hover > a {
     line-height: 40px;
     list-style-type: none;
     text-align: center;
-    padding: 0.5em 1em 1em 1em;
+    padding: 0em 1em 1em 1em;
 } /* plan box with text*/
-
-li.one-third {
-    list-style-type: none;
-} /* removes the li styling from headers */
 
 .box h4 {
     font-size: 24px;
@@ -330,7 +326,6 @@ footer {
 
 }
 
-
 @media (min-width: 768px) {
    .container {
         width: 750px;
@@ -345,7 +340,8 @@ footer {
      width:46%;
    }
    .one-third {
-     width:29.33333%;
+     width:28%;
+     display: inline-block;
    }
    .one-fourth {
      width:21%;
@@ -363,14 +359,14 @@ footer {
     }
  }
 
-
  @media (min-width: 600px) {
-
     .one-half, .one-third, .one-fourth {
         float: none;
-        width: 100%;
+        width: 28%;
+        display: inline-block;
     }
  }
+
 
 
 
